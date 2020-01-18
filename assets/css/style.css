@@ -8,5 +8,5 @@ html, body {
 button {
     background-color: limegreen;
     border-color: black;
-    border-style: dotted;
+    margin: 5px;
 }
