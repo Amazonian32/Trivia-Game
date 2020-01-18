@@ -1,24 +1,32 @@
+var answerKey = [{
+    1: [{ "black": true, "blue": false, "pink": false, "green": false }],
+    2: [{ "Gale": false, "Lynn": false, "Marie": true, "sky": false }],
+    3: [{ "neverending": false, "short": true, "nothing": false, "all of them": false }]
+}];
 
-// var quizQuestions = [
-//     { q: "The sky is blue.", a: "t" },
-//     { q: "There are 365 days in a year.", a: "t" },
-//     { q: "There are 42 ounces in a pound.", a: "f" },
-//     { q: "The Declaration of Independence was created in 1745.", a: "f" },
-//     { q: "Bananas are vegetables.", a: "f" }
-// ]
-var questions = ["The sky is blue.", "There are 365 days in a year.", "There are 42 ounces in a pound.", "The Declaration of Independence was created in 1745.", "Bananas are vegetables."]
 
-// var quizAnswers = [
-//     { a: "t", b: "f", c: "f", d: "f" }
-// ];
-var answers = ["t", "f"]
+let index = 0;
 
-let index = 0
-
-// let choices = quizAnswers.length[index]
+var answerQ = [
+    
+         "What is my favorite color?",
+         "What is my middle name?",
+         "What word becomes shorter when you add two letters to it?"
+    ];
+var questions = answerQ
+var answers = [answerKey[1], answerKey[2], answerKey[3]];
 
 $(document).ready(function () {
 
+    function testTime() {
+        for (let i = 0; i < answerKey.length; i++) {
+            console.log(answerKey[i])
+            // console.log(questions[i]);
+
+        }
+    }
+
+    testTime();
     function askQuestion() {
 
         if (index <= (questions.length - 1)) {
@@ -26,8 +34,10 @@ $(document).ready(function () {
                 var currentQ = $("<h2>")
                 currentQ.text(questions[i])
                 console.log(questions[i]);
+
+                $("#question").append(currentQ);
             }
-            $("#question").append(currentQ);
+            
 
         } else {
             console.log("GAME OVER");
@@ -42,6 +52,21 @@ $(document).ready(function () {
                 $("#choices").append(choices);
             }
 
+
+            $("button").on("click", function (event) {
+                console.log("clicked: " + $(this).attr("id"));
+                choices = $(this).attr("id");
+                function grade() {
+                    if (choices == answerKey[index].a) {
+                        console.log("HOORAH");
+                    } else {
+                        console.log("BOO");
+                    }
+
+                }
+                grade();
+
+            })
         }
 
         multipleChoice();
@@ -49,9 +74,5 @@ $(document).ready(function () {
 
     askQuestion();
 
-    $("button").on("click", function (event) {
-        console.log("clicked: " + $(this).attr("id"));
-
-    })
 
 });
