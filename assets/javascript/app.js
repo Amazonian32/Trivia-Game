@@ -10,43 +10,42 @@ $(document).ready(function () {
         _t.count = 30;
         _t.current = 0;
         _t.questions = [{
-            question: "In Aladdin, what is the name of Jasmine's pet tiger?",
-            choices: ["Rajah", "Bo", "Iago", "Jack"],
-            images: ["../images/Rajah.gif"],
+            question: "What word becomes shorter by adding two more letters?",
+            choices: ["Short", "Smile", "Long", "Stack"],
             correct: 0
         }, {
-            question: "In Peter Pan, Captain Hook had a hook on which part of his     body?",
-            choices: ["Right Foot", "Left Hand", "Left Foot", "Right Hand"],
+            question: "Before Mt. Everest was discovered, which was the highest mountain in the world?",
+            choices: ["Mtn Dew", "Mt. Everest", "Mt. Helen", "Mt. Fuji"],
             correct: 1
 
         }, {
-            question: "In the Lion King, where does Mufasa and his family live?",
-            choices: ["Rocky Mountain", "Forest", "Desert", "Pride Rock"],
+            question: "How long is the answer to this question?",
+            choices: ["2 Hours", "50 Feet", "Miles", "How Long"],
             correct: 3
 
         }, {
-            question: "In Beauty and the Beast, how many eggs does Gaston eat for    breakfast?",
-            choices: ["2 Dozen", "5 Dozen", "5000", "0"],
+            question: "Divide 50 by half, and add 20",
+            choices: ["45", "120", "22", "None of the above"],
             correct: 1
 
         }, {
-            question: "In Alice in Wonderland, what is the name of Alice’s kitten?",
-            choices: ["Dinah", "Sammie", "Kat", "Luna"],
+            question: "What has a mouth but can't chew",
+            choices: ["River", "No-Mouth Man", "Bugs", "Nothing"],
             correct: 0
 
         }, {
-            question: "After being on earth, where did Hercules first meet his   father Zeus?",
-            choices: ["Mount Olympus", "Greece", "In the Temple of Zeus", "Elysian   Fields"],
+            question: "I go through towns and hills, but I never move. Who am I?",
+            choices: ["Everything", "Air", "Road", "Animals"],
             correct: 2
 
         }, {
-            question: "During the ballroom scene of Beauty & the Beast, what color is Belle’s Gown?",
-            choices: ["Yellow", "Blue", "Gold", "White"],
+            question: "Forward I'm heavy, but backwards I'm not. What Am I?",
+            choices: ["Matter", "Elephant", "Ton", "Truck"],
             correct: 2
 
         }, {
-            question: "In Bambi, what word does the owl use to describe falling in love?",
-            choices: ["Whimsical", "Miserable", "Joyful", "Twitterpatted"],
+            question: "what word of five letters has only one left when two letters are removed",
+            choices: ["Car", "Sky", "Nothing", "Stone"],
             correct: 3
         }];
         _t.ask = function () {
