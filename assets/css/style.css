@@ -1,12 +1,43 @@
 html, body {
-    background-color: black;
+    background-color: #b3b6f2;
     text-align: center;
+    color: #BEB6F2;
+    margin: 10px;
+    text-shadow:
+    -1px -1px 0 grey,
+    1px -1px 0 grey,
+    -1px 1px 0 grey,
+    1px 1px 0 grey;
 }
+
 .container {
-    background-color: limegreen;
+    background-color: #A0F2D4;
+    border-style: solid;
+    border-color: #A2CDF2;
+    border-radius: 25px;
+    box-shadow: rgb(112, 160, 150) 4px 4px;
+    color: white;
+    font-size: 24px;
 }
+
 button {
-    background-color: limegreen;
+    color: white;
+    background-color: #F2BDDA;
     border-color: black;
+    box-shadow: rgb(112, 160, 150) 4px 4px;
+    margin: 10px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.correct, .incorrect {
+    text-transform: capitalize;
+}
+img {
     margin: 5px;
+    width: 150px;
+    height: 250px;
+    box-shadow: rgb(112, 160, 150) 4px 4px;
 }
